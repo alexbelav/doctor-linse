@@ -1,0 +1,153 @@
+//Подключение шрифтов=====================================================
+@font-face {
+    font-family: 'Muller';
+    src: local('Muller Bold'), local('Muller-Bold'),
+        url('/src/fonts/Mu.woff2') format('woff2'),
+        url('/src/fonts/MullerBold.woff') format('woff'),
+        url('/src/fonts/MullerBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'Muller';
+    src: local('Muller Medium'), local('Muller-Medium'),
+        url('/src/fonts/MullerMedium.woff2') format('woff2'),
+        url('/src/fonts/MullerMedium.woff') format('woff'),
+        url('/src/fonts/MullerMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'Muller';
+    src: local('Muller Regular'), local('Muller-Regular'),
+        url('/src/fonts/MullerRegular.woff2') format('woff2'),
+        url('/src/fonts/MullerRegular.woff') format('woff'),
+        url('/src/fonts/MullerRegular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }   
+@font-face {
+    font-family: 'Muller';
+    src: local('Muller Light'), local('Muller-Light'),
+        url('MullerLight.woff2') format('woff2'),
+        url('MullerLight.woff') format('woff'),
+        url('MullerLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+//====================================================================
+//REM
+$fz: 16; // Default
+@function rem($px, $cnt: $fz) {
+  @return #{$px/$cnt}rem;
+}
+//Procent
+@function percent($px, $from) {
+	@return #{$px/$from} * 100%;
+}
+@mixin drop {
+	filter: drop-shadow(0px 0px 6px rgba(2,142,206,0.1));
+}
+//Обновление==========================================================
+
+* {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+html,
+body {
+	height: 100%;
+	min-width: 320px;
+}
+body {
+	color: #6D768C;
+	line-height: 1;
+	font-family: 'Muller', sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	//text-rendering: optimizeLegibility;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+body.lock {
+	overflow: hidden;
+}
+input,
+button,
+textarea {
+	font-family: 'Muller', sans-serif;
+	font-size: inherit;
+}
+button {
+	cursor: pointer;
+	color: inherit;
+	background-color: inherit;
+}
+a {
+	color: inherit;
+}
+a:link,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+//Оболочка=========================================================
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	// Прижимаем footer
+	> main {
+		flex: 1 1 auto;
+	}
+	// Фикс для слайдеров
+	> * {
+		min-width: 0;
+	}		 	 	
+}	 	
+[class*="__container"] {
+    max-width: 1305px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+@import "header";
+@import "home";
+
+
+
