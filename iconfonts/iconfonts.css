@@ -1,0 +1,88 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('/src/iconfonts/fontsicon/icon.eot');
+  src:  url('/src/iconfonts/fontsicon/icon.eot') format('embedded-opentype'),
+    url('/src/iconfonts/fontsicon/icon.ttf') format('truetype'),
+    url('/src/iconfonts/fontsicon/icon.woff') format('woff'),
+    url('/src/iconfonts/fontsicon/icon.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="_icon-"]:before, [class*=" _icon-"]:before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon';
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+._icon-d:before {
+  content: "\e900";
+  color: #fff;
+}
+._icon-arrow:before {
+  content: "\e901";
+  color: #fff;
+}
+._icon-arrow_bottom:before {
+  content: "\e902";
+  color: #028ece;
+}
+._icon-calendar:before {
+  content: "\e903";
+  color: #028ece;
+}
+._icon-cart:before {
+  content: "\e904";
+  color: #fff;
+}
+._icon-license:before {
+  content: "\e905";
+  color: #33c1cc;
+}
+._icon-local:before {
+  content: "\e906";
+  color: #39b6c0;
+}
+._icon-logo:before {
+  content: "\e907";
+}
+._icon-play:before {
+  content: "\e908";
+  color: #fff;
+}
+._icon-play-button:before {
+  content: "\e909";
+  color: #39b6c0;
+}
+._icon-play-video:before {
+  content: "\e90a";
+  color: #39b6c0;
+}
+._icon-search:before {
+  content: "\e90b";
+  color: #0f80c4;
+}
+._icon-telegram:before {
+  content: "\e90c";
+  color: #25a8e3;
+}
+._icon-vector:before {
+  content: "\e90d";
+  color: #33c1cc;
+}
+._icon-watsapp:before {
+  content: "\e90e";
+  color: #40ac69;
+}
+
